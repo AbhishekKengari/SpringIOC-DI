@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define a bean -->
+    <bean id="AddressBean" class="com.Address">
+        <property name="hNo" value="H.No.2"/>
+        <property name="city" value="Hyderabad"/>
+        <property name="state" value="Telangana"/>
+    </bean>
+    <bean id="emp" class="com.Employee">
+        <property name="eName" value="Abhishek"/>
+        <property name="eAge" value="24"/>
+        <property name="eAddress" ref="AddressBean"/>
+    </bean>
+</beans>
