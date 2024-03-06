@@ -4,6 +4,8 @@ public class Employee {
 
     private String eName;
     private int eAge;
+    // the emp is dependent on address 
+    //we will need to create a address and then create employee
     private Address eAddress;
     public Employee(){}
     public Employee(String eName, int eAge, Address eAddress) {
