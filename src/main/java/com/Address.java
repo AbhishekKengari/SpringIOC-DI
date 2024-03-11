@@ -1,5 +1,5 @@
 package com;
-
+//the class we inject dependency 
 public class Address {
 
     private String hNo;
